@@ -9,12 +9,6 @@ intents.members = True
 client = discord.Client(intents=intents)
 
 @client.event
-async def on_member_join(member):
- await member.guild.system_channel.send("Hail Traveler, " + member.name + "!")
- await member.guild.system_channel.send("Let's get puzzling! Check your DMs")
- await member.send("https://lyrical-brave-sailboat.glitch.me/ \n *smoke bomb*")
-
-@client.event
 async def on_ready():
  '''Called wheTh client is ready. Prints the bot's current user.'''
  print('We have logged in as {0.user}'.format(client))
@@ -25,10 +19,15 @@ async def on_ready():
 async def on_message(message):
        if message.author == client.user:
            return
+       if message.content == "!start":
+           message.author.send("Welcome puzzle attempter! My name is Monika. I’ve been trapped in this dark room for an eternity. Will you help me?")
+
        print(message.content + " by " + message.author.name)
        if isinstance(message.channel, discord.DMChannel):
-         if message.content.upper() == "POG":
-           await message.author.send("https://lyrical-brave-sailboat.glitch.me/start.html \n *smoke bomb*")
+         if message.content.upper() == "YES" or message.content.upper() == "Y":
+           await message.author.send("This dark room seems to flash this image periodically. https://blog.kachinahouse.com/wp-content/uploads/2020/04/oHwngOow.png Sometimes, these words are also said: DIBEH-YAZZIE AH-JAH D-AH ‘ DIBEH  AH-TAD A-KHA  D-AH A-KHA  CHA-GEE  TAH-BAHN (B) TAH-BAHN (B). What are they saying?")
+         if message.content.upper() == "LET'S GO TO THE BEACH BEACH":
+           await message.author.send("Oh! Now the images are gone, but this tune started playing! https://drive.google.com/file/d/1A3WexiPTvaLBQBh7OqGsC9WVtbtfPCBB/view?usp=sharing What is going on?")
          if message.content.upper() == "RICK-ASTLEY-PI":
            await message.author.send("You have done well! \n Millhall salutes you. \n Pi is a nice number. Though not as great as 4. For the next clue, you will need to look to the past. Find where the motions of this puzzle were set up, and where Millhall's conception could have been averted. \n *smoke bomb* ")
          if message.content.upper() == "WRONG-'EM-BOYO":
