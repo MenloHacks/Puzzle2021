@@ -26,7 +26,7 @@ async def on_ready():
 async def on_message(message):
        if message.author == client.user:
            return
-       if message.content == "!start":
+       if message.content == "?start":
            await message.author.send("Welcome puzzle attempter! My name is Monika. I’ve been trapped in this dark room for an eternity. Will you help me?")
        print(message.content + " by " + message.author.name)
        if isinstance(message.channel, discord.DMChannel):
@@ -58,6 +58,7 @@ async def on_message(message):
            await message.author.send("https://drive.google.com/file/d/1xDgYuO_SRrKja95IbjJGX3ZyE89JF9-n/view?usp=sharing")
          if message.content.upper() == "YOU'RE STAYING WITH ME FOREVER UWU":
            await message.author.send("What, you think I’m holding you hostage? Of course not! UwU. Here solve this puzzle, or this letter, or this message. Here I found some more characters. What? You want to leave. Well that’s impossible. You would need all of my login information, which you will never get. Not even the MenloHacks website can help you. Now in the meantime, can you analyze this video for me please :) UWU")
+           await message.author.send("monikashotelroomwithoutkey")
          if message.content == "}sJ)WIP<9ju:yhdK4cjou~LBN:Lg5BqyYiqCnX^HAiGuQzc<YBu/l)9rdUkxM":
            await message.author.send("Congratulations! You have deleted Monika! You are free and have solved the puzzle. Amazing job! -jgl789 and Sam0fc")
            for i in client.guilds:
