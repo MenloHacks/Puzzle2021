@@ -44,7 +44,7 @@ async def on_message(message):
          if message.content.upper() == INPUTSTRING:
            await message.author.send(getZs())
          if message.content.upper() == "NORMAL" or message.content.upper() == "GAUSSIAN" or message.content.upper() == "STANDARD NORMAL" or message.content.upper() == "GAUSS":
-           await message.author.send("Wow you are really good at math. I’d give you a 7.8/10! The room seems to be so much darker, I can barely see anything except for these small flashes of light. They appear to read a long series of meaningless letters! \n A1B1A2DB1A2DA1B2A2A3DB1A2B2A3DDA1B1DA1B2A3DA1B1A3DA1B2DB1A2A3DDA1A2B2A3DA1B2DA1A2A3DB1A2DA1B1DA1DA1B1B2A3DB1A2B2A3DA1A2B2DA2B2B3DDA1A2A3DA1DB1A2A3DB1A2B2A3DDA1A2DA1B2A3DA1B1A3DA1B2DB1A2A3DDB1A2B2V3DA1DB1A2DA1A2A3DA1B2A3DA1A2B2A3DA1A2B2DA2B2B3")
+           await message.author.send("Wow you are really good at math. I’d give you a 7.8/10! The room seems to be so much darker, I can barely see anything except for these small flashes of light. They appear to read a long series of meaningless letters! \n A1B1A2DB1A2DA1B2A2A3DB1A2B2A3DDA1B1DA1B2A3DA1B1A3DA1B2DB1A2A3DDA1A2B2A3DA1B2DA1A2A3DB1A2DA1B1DA1DA1B1B2A3DB1A2B2A3DA1A2B2DA2B2B3DDA1A2A3DA1DB1A2A3DB1A2B2A3DDA1A2DA1B2A3DA1B1A3DA1B2DB1A2A3DDB1A2B2B3DA1DB1A2DA1A2A3DA1B2A3DA1A2B2A3DA1A2B2DA2B2B3")
          if message.content.upper() == "RELICANTH WAILORD":
            await message.author.send("Huh! It appears that the lights turned on! Where are we? Oh, I found this letter on the ground. ")
            await message.author.send("https://docs.google.com/document/d/1jkRFI2jD31xIsTPPDLYGtH3JMWtSP_6JIeOSKWVIgA4/edit?usp=sharing")
@@ -56,10 +56,11 @@ async def on_message(message):
          if message.content.upper() == "ALEX ACRA":
            await message.author.send("You’re so awesome! Your codebreaking is unparalleled! After all, consistency is key! It’s almost a shame that the end is so near. Would you be a dear and investigate this image for me? [insert hidden image]")
            await message.author.send("https://drive.google.com/file/d/1xDgYuO_SRrKja95IbjJGX3ZyE89JF9-n/view?usp=sharing")
-         if message.content.upper() == "YOU'RE STAYING WITH ME FOREVER UWU":
+         if message.content.upper() == "YOURE STAYING FOREVER WITH ME UWU":
            await message.author.send("What, you think I’m holding you hostage? Of course not! UwU. Here solve this puzzle, or this letter, or this message. Here I found some more characters. What? You want to leave. Well that’s impossible. You would need all of my login information, which you will never get. Not even the MenloHacks website can help you. Now in the meantime, can you analyze this video for me please :) UWU")
            await message.author.send("monikashotelroomwithoutkey")
-         if message.content == "}sJ)WIP<9ju:yhdK4cjou~LBN:Lg5BqyYiqCnX^HAiGuQzc<YBu/l)9rdUkxM":
+           await message.author.send("Type \"verify123: password\" to delete the account")
+         if message.content == "verify123: }sJ)WIP<9ju:yhdK4cjou~LBN:Lg5BqyYiqCnX^HAiGuQzc":
            await message.author.send("Congratulations! You have deleted Monika! You are free and have solved the puzzle. Amazing job! -jgl789 and Sam0fc")
            for i in client.guilds:
              await i.system_channel.send("Well done to "+ message.author.name + " for completing the puzzle!")
