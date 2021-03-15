@@ -68,7 +68,6 @@ async def update_status():
     '''randomize status'''
     await client.wait_until_ready()
     while True:
-        # await client.change_presence(activity=discord.Game(name=choice(STATUS_LIST)))
         await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching,
                                                                name=f"you solve puzzles {choice(STATUS_LIST)}"))
         await sleep(60) # task runs every 60 seconds
